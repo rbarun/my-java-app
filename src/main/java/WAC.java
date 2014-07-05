@@ -10,8 +10,7 @@ public class WAC {
 			Scanner input = new Scanner(System.in);
 			System.out.println("Enter letter: ");
 			String iinput = input.nextLine();
-			input.close();
-			
+		
 			int num = 0;
 			String found = "";
 			String[] alphabet = {"A", "B","C", "D","E", "F","G", "H","I", "J","K", "L","M", "N","O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
@@ -76,20 +75,21 @@ public class WAC {
 				System.out.println(alphabet[index]);
 		}
 		else{
-			int factor;
-			for (int q = 15; q < 27; q++) {
+			/*int factor1 = 0;
+			for (int q = 21; q <= 26; q++) {
 				if (num % q == 0){
-					factor = num/q;
+					factor1 = num/(num/q);
 					break;
+					
 			}
+			}
+			System.out.println(alphabet[factor1+1]);*/
 			
-		}
-			//System.out.println(alphabet[factor]);
-		
-		}
-		
+			int mod = num % 26;
+			
+			System.out.println(alphabet[mod]);
+			
+		}		
 	}
+}	
 }
-	
-}
-
