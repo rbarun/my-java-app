@@ -8,3 +8,11 @@ public abstract class Animal {
 	
 
 }
+
+
+public interface TestInterface {
+	 public void wish();
+	 public void Saywish();
+
+}
+
